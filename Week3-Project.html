@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miniature Schnauzer 🐶</title>
+    <style>
+      body {
+        background: linear-gradient(
+          19deg,
+          rgb(142, 230, 237) 0%,
+          rgb(139, 102, 241) 100%
+        );
+      }
+      hr {
+        height: 1px;
+      }
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+        padding: 15px;
+        border: 1px solid #38598b;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 100;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+        margin: auto;
+        padding: 10px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+        border-radius: 10px;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #38598b;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .dogs {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      button {
+        padding: 5px;
+        margin: 0 auto;
+        display: block;
+        background-color: #738df6;
+        box-shadow: 3px 3px #bfc7ff;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dogs">
+      <h1>I Love Dogs <br />They're <em>(Wo)men's</em> Best Friend 😉</h1>
+      <h2>Miniature Schnauzers are the best!</h2>
+      <img
+        src="https://blog.healthypawspetinsurance.com/wp-content/uploads/2021/11/mini-schnauzer-featured.jpg "
+        alt="Mini Schnauzer"
+        width="200"
+      />
+      <p>
+        <span class="aboutBreed">
+          <strong> About the Breed </strong><br />
+          The Miniature Schnauzer, the smallest of the three Schnauzer breeds,
+          is a generally healthy, long-lived, and low-shedding companion. Add an
+          outgoing personality, a portable size, and sporty good looks, and
+          you've got an ideal family dog.
+          <br />
+          <a
+            href="https://www.akc.org/dog-breeds/miniature-schnauzer/"
+            class="learn-more"
+          >
+            Learn more on American Kennel Club
+          </a>
+        </span>
+      </p>
+      <button class="adoptAdog">Adpot a Schnauzer</button>
+      <p>This page was coded by Maliyah Thompson</p>
+    </div>
+    <script>
+      function adopt() {
+        let name = prompt("What is your name?").toLowerCase().trim();
+        let interested = prompt("Are you interested in adopting?")
+          .toLowerCase()
+          .trim();
+        if (interested === "yes") {
+          alert(
+            "Thank you " +
+              name +
+              ", for your intrest in adopting, we'll reach out shortly!"
+          );
+        } else
+          alert(
+            "Thank you " + name + ", check back when you're ready to adopt!"
+          );
+      }
+      let adoptAdog = document.querySelector(".adoptAdog");
+      adoptAdog.addEventListener("click", adopt);
+    </script>
+  </body>
+</html>
